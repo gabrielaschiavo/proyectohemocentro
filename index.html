@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <title>Centro de Donación de Sangre</title>
 </head>
 <body>
@@ -33,10 +35,12 @@
     <section class="requisitos" id="requisitos">
         <h2 class="color"> Requisitos para ser Donante</h2>
          <div class="container-requisitos">
-             <div>
+           <div class="row">
+             <div class="col-6">
                 <img class="foto1" src="imagenes/imagen01.jpg" alt="Requisitos">
             </div>
-            <div class="requisitos">
+            <div class="col-6 requisitos">
+                <p>Donar sangre es el regalo más valioso que podemos hacerle a alguien. La decisión de donar sangre puede salvar una vida o incluso varias si la sangre es separada por sus componentes: glóbulos rojos, plaquetas y plasma, ya que pueden utilizarse individualmente para pacientes con enfermedades específicas. Una persona sana tiene la capacidad de restablecer la sangre donada hasta en 60 días, razón por la que un donador es capaz de donar sangre cada 2 meses.</p>
                <ul>
                    <li>Edad: 16 a 65 años.</li>
                    <li>Concurrir con DNI.</li>
@@ -51,6 +55,7 @@
                    <li>Descansar bien previamente.</li>                
                 </ul> 
             </div>
+           </div>
         </div>   
     </section>
 
@@ -59,57 +64,80 @@
 
         <iframe class="video-tipos" width="1280" height="400" src="https://www.youtube.com/embed/QlsTCSCHCPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div class="container-tipos">
-            <div class="card-tipos">
+         <div class="row">
+            <div class="col-3 card-tipos">
                 <img class="imgcard" src="imagenes/tipos01.png" alt="sangre">
                 <h4>Donación de Sangre</h4>
                 <p class="descripcion" >1 donante puede salvar hasta 4 vidas. 9 de cada 10 personas
                     necesitarán sangre para ellas o su entorno en algún momento de su vida. Se recogen 450 ml. en un sistema cerrado de bolsas que contienen líquido anticoagulante y conservantes. Durante la extracción, la bolsa permanece en una balanza cuya misión es agitar la sangre para mezclarla con el líquido anticoagulante y controlar el volumen de la extracción. Hacete donante voluntario y habitual. La sangre no se puede fabricar.</p>
             </div>
-            <div class="card-tipos">
+            <div class="col-3 card-tipos">
                 <img class="imgcard" src="imagenes/tipos02.png" alt="plaquetas">
                 <h4>Donación de Plaquetas</h4>
                 <p class="descripcion" >Durante una donación de plaquetas se extrae una pequeña cantidad de tu sangre y se pasa a través de una máquina sofisticada de separación de células. La máquina recoge las plaquetas y te devuelve el resto de los componentes de la sangre, junto con algo de salina. Después de la donación puedes volver a tus actividades diarias, evitando levantar objetos pesados o realizar ejercicio intenso ese día.</p>
             </div>
-            <div class="card-tipos">
+            <div class="col-3 card-tipos">
                 <img class="imgcard" src="imagenes/tipos03.png" alt="medulaosea">
                 <h4>Donación de Médula Ósea</h4>
                 <p class="descripcion" >Cada año cientos de personas necesitan un donante de médula ósea para recuperar su salud y no cuentan con un donante compatible en su familia por lo que deben recurrir a un donante no emparentado. Por eso existen en el mundo los Registros de Donantes. En Argentina, para ser donante de médula ósea hay que donar sangre e inscribirse en el Registro Nacional de Donantes Voluntarios de CPH.</p>
             </div>
-            <div class="card-tipos">
+            <div class="col-3 card-tipos">
                 <img class="imgcard" src="imagenes/tipos04.png" alt="plasma">
                 <h4>Donación de Plasma</h4>
                 <p class="descripcion" >El plasma es uno de los componentes claves de la sangre que se necesita para la práctica de la medicina moderna. Durante la donación de plasma se extrae sangre de un brazo y se conduce hasta una máquina automatizada a través de un equipo de recolección estéril  que se utiliza una sola vez. La máquina recoge componentes selectos, solo plasma o una combinación de plasma y unidades de plaquetas, y después te devuelve el resto de los componentes de la sangre con algo de salina.</p>
             </div>
+         </div> 
         </div>
     </section>
 
     <section id="voluntarios">
         <h2 class="color">Nuestros Donantes Voluntarios</h2>
         <div class="container-voluntarios">
-            <div class="card-vol">
-                <img class="img-perfil" src="imagenes/voluntario01.png" alt="plasma">
+          <div class="row">
+            <div class="col-4 card-vol">
+                <img class="img-perfil" src="imagenes/voluntario01.png" alt="voluntario">
                 <h1 class="nombre-vol">Mariana</h1>
                 <h2 class="tipo-vol">Donante de Sangre</h2>
-                <p class="descripcion" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="descripcion" >Si querés sentirte pleno/a haciendo una obra de bien y de amor hacia el prójimo, DONA SANGRE. ¿Querés sentirte aún mejor? Acércate al Hemocentro, donde en un ambiente cordial, alegre y con personal altamente calificado te vas a sentir mejor que en tu casa.</p>
             </div>
-            <div class="card-vol">
-                <img class="img-perfil" src="imagenes/voluntario02.png" alt="plasma">
+            <div class="col-4 card-vol">
+                <img class="img-perfil" src="imagenes/voluntario02.png" alt="voluntario">
                 <h1 class="nombre-vol">Juan Manuel</h1>
                 <h2 class="tipo-vol">Donante de Plaquetas</h2>
-                <p class="descripcion" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="descripcion" >¡Muy buena atención! Contento de donar plaquetas para todos los pacientes que lo necesitan y orgulloso de pertenecer al grupo de donantes voluntarios de esta gran Institución. Felicitaciones a todo el personal.</p>
             </div>
-            <div class="card-vol">
-                <img class="img-perfil" src="imagenes/voluntario03.png" alt="plasma">
+            <div class="col-4 card-vol">
+                <img class="img-perfil" src="imagenes/voluntario03.png" alt="voluntario">
                 <h1 class="nombre-vol">Verónica</h1>
                 <h2 class="tipo-vol">Donante de Médula Ósea</h2>
-                <p class="descripcion" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="descripcion" >Donar médula es ayudar a salvar una vida, siento que tengo un hermano gemelo en algún lugar del mundo. Donar es una oportunidad para los dos; para mí, que puedo hacer algo grande y para el paciente que se puede curar.</p>
             </div>
-            
+        </div>
+    </div>
     </section>
 
     <section id="contacto">
         <h2 class="color">Envianos tu consulta</h2>
-        <p>ACA VA EL FORMULARIO DE CONTACTO</p>
+        <div class="flex-container">
+            <div class="form-img">
+                <img src="imagenes/imagen02.jpg">
+            </div>
+            <form class="form-img">
+                <h4>¿Tenés una consulta? Nosotros te respondemos</h4>
+    
+                <div class="form-section">
+                <input class="form-input" type="text" name="Nombre" placeholder="Nombre" >
+                
+                <input class="form-input" type="email" name="Mail" placeholder="Correo electrónico" >
+                
+                <textarea class="form-input" placeholder="Escriba su mensaje aquí"></textarea>
+                
+                <input class="form-input" type="submit" name="Enviar">
+                
+                </div>           
+             </form>         
+            </div>
+        </div>
     </section>
 
     <footer>    
@@ -118,5 +146,6 @@
             <h5>Todos los derechos reservados.</h5>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
