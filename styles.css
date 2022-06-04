@@ -10,37 +10,65 @@ body {
     padding-top: 80px;
 }
 
-header img {
-    height: 80px;
-	padding-left: 5px;
-}
-
 header {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
+    height: 90px;
     width: 100%;
     display: flex;
     align-items: center;
-	box-shadow: 0 0 15px 0 rgb(201, 199, 199);
 }
-
-header * {
-    display: inline;
+.menu {
+    background-color: #fd3030cb;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+    position: fixed;
 }
-
-header li {
-    margin: 20px;
-    
+.logo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    padding: 0 40px;
+    font-weight: bold;
 }
-
-header li a {
-    color: rgb(255, 0, 0);
+.menu_items {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.menu_items li {
+    border-radius: 3px;
+    margin-right: 0 5px;
+}
+.menu_items li a {
+    padding: 7px 13px;
     text-decoration: none;
-	font-weight: bold;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+.menu_items li:hover, li:active {
+    background-color: rgba(182, 180, 180, 0.3);
+    transition: .4s;
+}
+
+@media screen and (max-width: 858px){
+    nav {
+        height: 230px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
 }
 
 .button-turno {
@@ -88,7 +116,7 @@ header li a {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 90px;
 }
 
 .requisitos {
@@ -98,6 +126,9 @@ header li a {
 .container-requisitos {
     background-color: white;
     color: grey;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .foto1 {
@@ -199,6 +230,13 @@ h4 {
     color: rgb(255, 0, 0);
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 858px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }  
 }
 
 .flex-container {
