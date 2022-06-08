@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    padding-top: 80px;
+    padding-top: 70px;
 }
 
 header {
@@ -16,14 +16,12 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 90px;
     width: 100%;
-    display: flex;
-    align-items: center;
+    z-index: 1;
+ 
 }
-.menu {
-    background-color: #fd3030cb;
-    height: 90px;
+.navbar {
+    background-color: #ff4747;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -31,44 +29,34 @@ header {
     box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
     position: fixed;
 }
-.logo {
+.navbar-brand {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(255, 255, 255);
     font-size: 35px;
     padding: 0 40px;
     font-weight: bold;
 }
-.menu_items {
+.navbar-nav {
     display: flex;
+    justify-content: end;
     list-style: none;
     margin-right: 30px;
     padding-top: 10px;
     font-weight: bold;
 }
-.menu_items li {
+.navbar-nav a {
     border-radius: 3px;
     margin-right: 0 5px;
-}
-.menu_items li a {
     padding: 7px 13px;
     text-decoration: none;
     font-size: 18px;
-    display: block;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
 }
-.menu_items li:hover, li:active {
-    background-color: rgba(182, 180, 180, 0.3);
-    transition: .4s;
-}
 
-@media screen and (max-width: 858px){
-    nav {
-        height: 230px;
-        flex-direction: column;
-        text-align: center;
-    }
-    
+.navbar-nav a:hover, a:active {
+    background-color: rgba(255, 255, 255, 0.637);
+    transition: .4s;
 }
 
 .button-turno {
@@ -158,6 +146,7 @@ header {
     gap: 10px;
     display: flex;
     justify-content: center;
+   
 } 
 .card-tipos {
     width: 320px;
